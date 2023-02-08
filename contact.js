@@ -76,7 +76,9 @@ const detail = (name) => {
   // jika nama ditemukan, tampilkan nama, email dan nomor hp
   if (cek) {
     console.log(`${cek.name}`);
-    console.log(`${cek.email}`);
+    if (cek.email) {
+      console.log(`${cek.email}`);
+    }
     console.log(`${cek.mobile}`);
   } else {
     // jika nama tidak ditemukan
